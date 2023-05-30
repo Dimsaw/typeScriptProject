@@ -131,3 +131,21 @@ button.addEventListener("click", function () {
 
 // console.log("");
 // console.log();
+
+class House {
+  street: string;
+
+  constructor(n: string) {
+    this.street = n;
+  }
+
+  showAddres(): void {
+    console.log("Address" + this.street);
+  }
+}
+
+const house1 = new House("Middle-earth");
+const house2 = new House("Middle-earth");
+const house3 = new House("Middle-earth");
+
+house1.showAddres();
